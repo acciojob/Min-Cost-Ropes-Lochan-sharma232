@@ -1,7 +1,7 @@
 function mincost(arr)
 { 
-	var first=num1;
-	var second=num2;
+	var first=num;
+	var second=num;
 	for(let i=0;i<arr.length;i++){
 		if(arr[i]>first){
 			second=first;
