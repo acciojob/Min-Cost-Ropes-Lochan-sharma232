@@ -1,7 +1,7 @@
 function mincost(arr)
 { 
 	var first;
-	var second;
+	var mincost;
 	for(let i=0;i<arr.length;i++){
 		if(arr[i]>first){
 			second=first;
@@ -12,10 +12,9 @@ function mincost(arr)
 			
 		}
 	}
-	return second;
+	return mincost;
 //write your code here
 // return the min cost
   
 }
-
 module.exports=mincost;
