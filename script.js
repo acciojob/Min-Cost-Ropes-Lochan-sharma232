@@ -1,19 +1,17 @@
 function mincost(arr)
 { 
-	var first;
-	var mincost;
-	for(let i=0;i<arr.length;i++){
-		if(arr[i]>first){
-			second=first;
-			first=arr[i];
-		}
-		else if(arr[i]>second && arr[i]<first){
-			second=arr[i];
-			
-		}
+	arr.sort((a,b)=>a-b)
+	let sum=0;
+	while(arr.length>1){
+		let demo=arr[0]+arr[1];
+		arr.shift()
+		arr.shift()
+	sum+=demo;
+		arr.push(demo);
+		arr.sort((a,b)=>a-b)
 	}
-	return mincost;
-//write your code here
+	return sum;
+	//write your code here
 // return the min cost
   
 }
